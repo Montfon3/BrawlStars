@@ -68,8 +68,9 @@
 
 
    section {
-       display: blocks;
-       grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 54px;
    }
 
    .classe-cartao {
@@ -92,6 +93,24 @@
        border-radius: 0px 0px 50px 50px;
        box-shadow: 0 0 10px #00000050;
    }
+   
+   .informacoes {
+    display: none;
+    background-color: #fc9310d1;
+    padding:50px;
+    width:80%;
+
+   }
+   /* .fundo-transparente {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #d2691e;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} */
 
    #WILLOW {
        background-color: blueviolet;
