@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brawl Stars</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        function mostrar(id) {
+            document.querySelector(id).style.display = 'block'
+        }
+        function esconder(id) {
+            document.querySelector(id).style.display = 'none'
+        }
+    </script>
 </head>
 
 <body>
@@ -39,16 +48,28 @@
         <!-- Cartao da WILLOW -->
         <article>
 
-            <div class="classe-cartao" id="WILLOW">
+            <div class="classe-cartao" id="WILLOW" onmouseover="mostrar('#Willow')" onmouseout="esconder('#Willow')">
 
                 <img src="./assets/imagens/Willow_Skin-Default.webp" alt="Imagem da Willow" height="300px">
 
                 <div class="texto">
                     <h1> WILLOW</h1>
-                    <h5>
-                        É uma personagem nova muito boa
-                    </h5>
                 </div>
+            </div>
+
+            <div class="informacoes" id="Willow" >
+                <p>
+                    Willow é uma lutadora mítica que tem pouca saúde, dano moderado e imensa utilidade com seu Super.
+                    Ela ataca lançando uma lanterna que cria uma pequena poça no chão que dura um período de tempo,
+                    causando dano e depois dano ao longo do tempo aos inimigos com o impacto. Para seu Super, ela atira
+                    em um girino que lhe permite controlar os Brawlers inimigos, ganhando um escudo de redução de danos
+                    enquanto os controla. O primeiro gadget de Willow, Spellbound, permite que seu próximo ataque cause
+                    dano de veneno de uma só vez. Seu segundo gadget, Dive, a torna momentaneamente imóvel, mas
+                    invulnerável. Seu primeiro Star Power, Love Is Blind, diminui moderadamente a velocidade de recarga
+                    de um inimigo envenenado. Seu segundo Star Power, Obsession, aumenta a velocidade de movimento de um
+                    Brawler inimigo controlado por seu Super.
+                </p>
+
             </div>
 
         </article>
@@ -66,6 +87,21 @@
                     <h1>Griff</h1>
                     <h5></h5>
                 </div>
+            </div>
+            <div class="informacoes">
+                <p>Griff é um Epic Brawler que pode ser desbloqueado antecipadamente por tempo limitado ao vencer o
+                    Griff Challenge ou pode ser desbloqueado em Starr Road. Griff tem saúde moderada e alto potencial de
+                    dano. Ele ataca disparando 3 ondas de 3 moedas, cada uma espalhada em um cone. Seu Super lança 5
+                    notas que viajam para frente e retornam para ele, causando mais dano à medida que avançam e se
+                    espalham em um cone. Seu primeiro gadget, Piggy Bank, deixa cair um cofrinho que explode após um
+                    atraso, causando dano de área e empurrando os inimigos para trás, ao mesmo tempo que destrói
+                    obstáculos. Seu segundo gadget, Coin Shower, permite que seu próximo ataque dispare 4 ondas de
+                    moedas. Seu primeiro Star Power, Keep the Change, permite que ele descarregue seu ataque mais
+                    rapidamente. Seu segundo Star Power, Business Resilience, cura periódica e fracionadamente sua saúde
+                    perdida.
+
+                </p>
+
             </div>
         </article>
 
@@ -85,6 +121,20 @@
 
                 </div>
             </div>
+            <div class="informacoes">
+                <p>Nani é um lutador épico que tem pouca saúde, mas pode causar danos pesado ​​​e de longo alcance. Ela
+                    ataca disparando três orbes leves em uma formação de diamante. Seu Super invoca um drone voador
+                    chamado Peep, que Nani pode direcionar manualmente contra os inimigos e explode ao entrar em
+                    contato, repelindo e causando alto dano aos inimigos e destruindo obstáculos em um curto raio. Seu
+                    primeiro Gadget, Warp Blast, se teletransporta para a localização atual de Peep durante seu Super.
+                    Seu segundo gadget, Return to Sender, protege parcialmente Nani de um único projétil que é
+                    convertido em um contra-ataque. Seu primeiro Star Power, Autofocus, adiciona dano extra ao seu Super
+                    à medida que ele viaja. Seu segundo Star Power, Tempered Steel, concede a Nani um escudo redutor de
+                    danos sempre que Peep está ativo.
+
+                </p>
+
+            </div>
         </article>
         <!-- cartao do NANI fim -->
 
@@ -102,6 +152,19 @@
                     <h1>EDGAR</h1>
                 </div>
             </div>
+            <div class="informacoes">
+                <p>Edgar é um Brawler algoz épico do Brawl Stars. Sua vida é baixa para um assassino de curta distância,
+                    porém o efeito de seu ataque principal o favorece, e a sua velocidade de movimento é muito rápida.
+                    Seu cachecol golpeia os inimigos próximos e recupera 25% pontos de saúde em base no dano causado em
+                    seu ataque. Seu Super carrega gradualmente e permite que Edgar salte obstáculos e receba mais
+                    velocidade ao pousar por alguns segundos.
+                    Durante as Festas Brawl 2020, os jogadores puderam obtê-lo gratuitamente como presente do dia 19 de
+                    dezembro até 7 de janeiro de 2021, fazendo com que o personagem quase sempre marcasse presença em
+                    partidas.
+
+                </p>
+
+            </div>
         </article>
         <!-- fim do cartao da Edgar -->
 
@@ -118,6 +181,24 @@
                     style="background-color:#ffffff;height:120px;border-radius:0 0 50px 50px;box-shadow:0 0 10px #00000050;">
 
                     <h1>BIBI</h1>
+                </div>
+                <div class="fundo-transparente">
+                    <div class="informacoes">
+                        <p>Bibi é um lutador épico que tem saúde decentemente alta, uma produção de dano moderadamente
+                            alta e uma velocidade de movimento muito rápida, mas um alcance curto. Bibi ataca balançando
+                            seu taco de beisebol em um arco amplo e próximo. Ela carrega sua barra de Home Run com toda
+                            a munição, e carregá-la faz com que seu próximo ataque derrube os inimigos. O Super de Bibi
+                            envia uma bolha que continua viajando e quicando nas paredes até desaparecer. Seu primeiro
+                            gadget, Vitamin Booster, a cura com o tempo. Seu segundo gadget, Extra Sticky, permite que
+                            seu próximo Super desacelere os inimigos. Seu primeiro Star Power, Home Run, aumenta sua
+                            velocidade de movimento quando sua barra de Home Run é carregada. Seu segundo Star Power,
+                            Batting Stance, concede a ela um escudo quando sua Home Run Bar é carregada. Seu
+                            Hypercharge, Out of Bounds, permite que seu Super se divida em duas bolhas ao atingir um
+                            inimigo.
+
+                        </p>
+
+                    </div>
                 </div>
         </article>
         <!-- fim do cartao da BIBI  -->
