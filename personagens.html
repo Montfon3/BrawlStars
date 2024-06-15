@@ -14,8 +14,36 @@
         function esconder(id) {
             document.querySelector(id).style.display = 'none'
         }
+
+        //funcao para buscar por texto
+        function buscarTexto() {
+            let textoBuscado = document.querySelector('#pesquisar').value;
+            const elementos = document.querySelectorAll('article');
+
+            elementos.forEach((elemento) => {
+                const h1Elemento = elemento.querySelector('h1');
+                if (h1Elemento) {
+                    const conteudoH1 = h1Elemento.textContent.toLowerCase();
+                    if (conteudoH1.includes(textoBuscado.toLowerCase())) {
+                        elemento.style.display = 'block'; // Exibe o elemento
+                    } else {
+                        elemento.style.display = 'none'; // Oculta o elemento
+                    }
+                }
+            });
+        }
+
+        function exibirTodos() {
+            const elementos = document.querySelectorAll('article'); // Seletor dos elementos que contêm os artigos
+            elementos.forEach((elemento) => {
+                elemento.style.display = 'block'; // Exibe todos os elementos
+            });
+         document.querySelector('#pesquisar').value = '';   
+        }
+
     </script>
 </head>
+
 
 <body>
     <header>
@@ -25,6 +53,15 @@
                 <span class="hamburguer"></span>
             </div>
         </label>
+        <div>
+            <label> Pesquisar:</label>
+            <input type="text" id="pesquisar">
+            <input type="submit" value="GO" onclick="buscarTexto()">
+<button id="delete" onclick="exibirTodos()">
+    delete
+</button>
+        </div>
+
         <h1>BrawlStars</h1>
         <nav>
 
@@ -57,7 +94,7 @@
                 </div>
             </div>
 
-            <div class="informacoes" id="Willow" >
+            <div class="informacoes" id="Willow">
                 <p>
                     Willow é uma lutadora mítica que tem pouca saúde, dano moderado e imensa utilidade com seu Super.
                     Ela ataca lançando uma lanterna que cria uma pequena poça no chão que dura um período de tempo,
