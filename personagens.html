@@ -38,7 +38,7 @@
             elementos.forEach((elemento) => {
                 elemento.style.display = 'block'; // Exibe todos os elementos
             });
-         document.querySelector('#pesquisar').value = '';   
+            document.querySelector('#pesquisar').value = '';
         }
 
     </script>
@@ -57,15 +57,15 @@
             <label> Pesquisar:</label>
             <input type="text" id="pesquisar">
             <input type="submit" value="GO" onclick="buscarTexto()">
-<button id="delete" onclick="exibirTodos()">
-    delete
-</button>
+            <button id="delete" onclick="exibirTodos()">
+                delete
+            </button>
         </div>
-
+        
         <h1>BrawlStars</h1>
         <nav>
-
-
+            
+            
             <ul class="menu-hamburguer-elements show">
                 <li>
                     <a href="index.html">
@@ -80,6 +80,7 @@
             </ul>
         </nav>
     </header>
+    <main>
 
     <section>
         <!-- Cartao da WILLOW -->
@@ -118,14 +119,14 @@
         <!-- Cartão do Griff inicio -->
         <article>
 
-            <div class="classe-cartao" id="Griff">
+            <div class="classe-cartao" id="Griff" onmouseover="mostrar('#Griffo')" onmouseout="esconder('#Griffo')">
                 <img src="./assets/imagens/Griff_Skin-Default.webp" alt="Imagem do Griff" height="300px">
                 <div class="texto">
                     <h1>Griff</h1>
                     <h5></h5>
                 </div>
             </div>
-            <div class="informacoes">
+            <div class="informacoes" id="Griffo">
                 <p>Griff é um Epic Brawler que pode ser desbloqueado antecipadamente por tempo limitado ao vencer o
                     Griff Challenge ou pode ser desbloqueado em Starr Road. Griff tem saúde moderada e alto potencial de
                     dano. Ele ataca disparando 3 ondas de 3 moedas, cada uma espalhada em um cone. Seu Super lança 5
@@ -147,7 +148,7 @@
         <!-- Cartão do NANI inicio -->
         <article>
 
-            <div class="classe-cartao" id="NANI">
+            <div class="classe-cartao" id="NANI" onmouseover="mostrar('#Nanis')" onmouseout="esconder('#Nanis')">
 
                 <img src="./assets/imagens/nani-brawl-stars-skin-retro.png" alt="Imagem da Nani" height="215px"
                     style="margin: 10px 0 30px 0 ;">
@@ -158,7 +159,7 @@
 
                 </div>
             </div>
-            <div class="informacoes">
+            <div class="informacoes" id="Nanis">
                 <p>Nani é um lutador épico que tem pouca saúde, mas pode causar danos pesado ​​​e de longo alcance. Ela
                     ataca disparando três orbes leves em uma formação de diamante. Seu Super invoca um drone voador
                     chamado Peep, que Nani pode direcionar manualmente contra os inimigos e explode ao entrar em
@@ -178,7 +179,9 @@
         <!-- Ínicio do cartao da Edgar  -->
         <article>
 
-            <div class="classe-cartao" style="background-color: rgb(143, 91, 191);">
+            <div class="classe-cartao" style="background-color: rgb(143, 91, 191);" onmouseover="mostrar('#Edges')"
+                onmouseout="esconder('#Edges')">
+                >
 
                 <img src="./assets/imagens/Edgar_Skin-Default.webp" alt="Imagem da Edgar" height="270px"
                     style="margin:30px 15px 15px 25px ;">
@@ -189,7 +192,7 @@
                     <h1>EDGAR</h1>
                 </div>
             </div>
-            <div class="informacoes">
+            <div class="informacoes" id="Edges">
                 <p>Edgar é um Brawler algoz épico do Brawl Stars. Sua vida é baixa para um assassino de curta distância,
                     porém o efeito de seu ataque principal o favorece, e a sua velocidade de movimento é muito rápida.
                     Seu cachecol golpeia os inimigos próximos e recupera 25% pontos de saúde em base no dano causado em
@@ -209,7 +212,9 @@
         <article>
 
             <div class="classe-cartao"
-                style="background-color: darkgoldenrod;height:400px;width:300px;text-align: center;border-radius:50px;margin:100px 0px 30px 20px;">
+                style="background-color: darkgoldenrod;height:400px;width:300px;text-align: center;border-radius:50px;margin:100px 0px 30px 20px;"
+                onmouseover="mostrar('#BibiBi')" onmouseout="esconder('#BibiBi')">
+
 
                 <img src="./assets/imagens/Bibi_Skin-Default.webp" alt="Imagem da BIBI" height="270px"
                     style="margin:30px 15px 15px 0px;">
@@ -220,7 +225,7 @@
                     <h1>BIBI</h1>
                 </div>
                 <div class="fundo-transparente">
-                    <div class="informacoes">
+                    <div class="informacoes" id="BibiBi">
                         <p>Bibi é um lutador épico que tem saúde decentemente alta, uma produção de dano moderadamente
                             alta e uma velocidade de movimento muito rápida, mas um alcance curto. Bibi ataca balançando
                             seu taco de beisebol em um arco amplo e próximo. Ela carrega sua barra de Home Run com toda
@@ -240,6 +245,40 @@
         </article>
         <!-- fim do cartao da BIBI  -->
     </section>
+
+</main>
+    <footer>
+        
+        <p>7/9/2024    
+        29/6/2024
+        
+        Este trabalho foi feito para quem gosta muito de Brawl Stars e também porque é muito divertido mas alé de jogos há mais coisas no mundo e saber jogar com moderação é muito bom pois estes jogos praticam vícios na cabeça das criaças po isso aconcelho a não se víciarem neste tipo de jogos ou mesmo outos.
+        Obrigado pela atenção epero que tenham gostado do meu trabalho realizado em sala de aula. 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+    
+            </p>
+    </footer>
+
+
+
 
 </body>
 
